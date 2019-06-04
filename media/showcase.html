@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block body %}
+	    {% for item in result %}
+        <tr>
+           <td  >{{loop.index}}</td>
+           <td ><span class="name">{{item.SC_NAME}}</span></td>
+           <td >{{item.OPEN}}</td>
+           <td >{{item.HIGH}}</td>
+           <td >{{item.LOW}}</td>
+           <td >{{item.CLOSE}}</td>
+        </tr>
+        {% endfor %}
+{% endblock %}

@@ -61,11 +61,12 @@ class homePage:
 
 if __name__ == '__main__':
     csv_file = getBhavcopy()
-    r = redis.StrictRedis(host="localhost",
+    r = redis.from_url(os.environ.get("REDIS_URL")
+    """StrictRedis(host="localhost",
         port=6379,
         charset="utf-8",
         decode_responses=True,
-        db=1)
+        db=1)"""
     loadRedis(csv_file)
     env = Environment(loader=FileSystemLoader('media'))
     config = {

@@ -8,6 +8,8 @@ Commit the code to Github. Host the application on AWS or Heroku or a similar pr
 
 
 # Usage
-'''pip3 install -r requirements.txt'''
+'''python
+pip3 install -r requirements.txt'''
 
-'''python3 app.py'''
+python3 app.py
+'''
